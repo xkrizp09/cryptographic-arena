@@ -1,6 +1,7 @@
 # Cryptographic arena
+Project for the MPC-KRY course. The task is to create a capture the flag game using selected topics from cryptography.
 ## Content
-Project contains
+Selected topics from cryptography:
 * ElGamal
 * RSA
 * AES
