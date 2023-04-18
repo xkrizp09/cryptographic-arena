@@ -1,4 +1,4 @@
-import cbc
+from cbc import *
 from Crypto.Util.strxor import strxor
 	"""
 	Ke komunikaci se serverem pouzijte nasledujici funkce:
