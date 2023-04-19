@@ -1,7 +1,7 @@
 from mysterious import key, flag
 from keyGeneration import p, h, g
 
-f = open('ciphertext2.txt', 'w')
+f = open('ciphertext.txt', 'w')
 
 y = key
 m = int(flag.encode('utf-8').hex(), 16) % p

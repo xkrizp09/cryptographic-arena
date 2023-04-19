@@ -6,7 +6,7 @@ def decode_int_to_str(encoded_int):
     return byte_str
 
 def decode():
-    f = open("ciphertext2.txt", "r")
+    f = open("ciphertext.txt", "r")
 
     c1 = int(f.readline())
     c2 = int(f.readline())
