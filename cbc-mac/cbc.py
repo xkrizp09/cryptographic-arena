@@ -3,7 +3,7 @@ from Crypto.Cipher import AES
 
 
 AES_key = "a9c3ffe462a9948c3e36b08d83a83e45"
-MAC_flag = "c6299caa5c5f47eb90163971385531ab"
+MAC_flag = "b5ee2383ade763c03b5a61b393af868c"
 
 AES_key = bytes.fromhex(AES_key)
 iv = "\x00" * 16
