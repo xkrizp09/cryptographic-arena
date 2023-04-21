@@ -3,7 +3,7 @@ from Crypto.Util.strxor import strxor
 
 def exploit():
 	#Text ke kteremu chceme ziskat MAC
-	target_string = "Stesti preje vsem odvaznym lidem"
+	target_string = "CBC-MAC is really interesting!!!"
 	#Rozdeleni stringu na bloky o velikosti 16b a sifrovani
 	first_slice = target_string[:16]
 	MAC_first_slice = bytes.fromhex(MAC_generation(first_slice))
