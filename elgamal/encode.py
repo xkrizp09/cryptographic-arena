@@ -1,16 +1,30 @@
+# Import necessary modules and functions
 from mysterious import key, flag
 from keyGeneration import p, h, g
 
-f = open('ciphertext.txt', 'w')
+#Function to ecrypt the user message
+def encode():
+    # Open a file to write ciphertext
+    f = open('ciphertext.txt', 'w')
 
-y = key
-m = int(flag.encode('utf-8').hex(), 16) % p
+    # Convert unknown plaintext to integer using hexadecimal encoding
+    m = int(flag.encode('utf-8').hex(), 16) % p
 
-c1 = pow(g, y, p)
-k = pow(h, y, p)
-c2 = k * m % p
+    # Generate the public key component
+    c1 = pow(g, key, p)
 
-f.write(str(c1) + '\n')
-f.write(str(c2) + '\n')
+    # Generate the shared secret component
+    s = pow(h, key, p)
 
-f.close()
+    # Encrypt the plaintext using ElGamal encryption
+    c2 = m * s % p
+
+    # Write the ciphertext components to file
+    f.write(str(c1) + '\n')
+    f.write(str(c2) + '\n')
+
+    # Close the file
+    f.close()
+
+if __name__ == "__main__":
+    encode()
