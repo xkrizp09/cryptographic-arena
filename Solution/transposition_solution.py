@@ -17,6 +17,6 @@ for i in range(0, len(contents), 3):
      a, b, c = chunk
     flag.append(c + a + b)
     
-#Runs the join method on the "flag" list to create a single string. Splits the string into individual words and assigns the last word to the flag variable and prints the flag variable.
+#Runs the join method on the "flag" list to create a single string. Splits the string into individual words and assigns the last word to the flag variable and prints the "flag" variable.
 flag = "".join(flag).split()[-1]
 print(flag)
