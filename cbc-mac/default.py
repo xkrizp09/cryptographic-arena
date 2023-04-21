@@ -11,7 +11,7 @@ MAC_authentication(tag) - used for checking if generated tag is correct
 
 
 def exploit():
-	
+	plaintext = "CBC-MAC is really interesting!!!"
 	
 	
 	
