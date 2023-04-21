@@ -15,7 +15,7 @@ def MAC_generation(plaintext):
 		assert len(plaintext) % 16 == 0
 		
 		#Zabrani uzivateli pouzit cely text
-		if plaintext == "Stesti preje vsem odvaznym lidem":
+		if plaintext == "CBC-MAC is really interesting!!!":
 			print("Takto jednoduche to nebude, zkus to jinak")
 			exit()
 		
