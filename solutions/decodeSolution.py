@@ -11,8 +11,7 @@ def decode():
     c1 = int(f.readline())
     c2 = int(f.readline())
 
-    #Doplnit
-    y = 
+    y = (p - 1) // 2
 
     s = pow(h, y, p)
     m = (c2* pow(s, -1, p)) % p
