@@ -28,8 +28,10 @@ class Point:
 def pointAddition(point, curve):
     result = Point
 
+    #lambda
     s = (3 * point.x * point.x + curve.a) * (int)(PowMod(((int)(point.y) << 1), (int)(curve.modulo - 2), (int)(curve.modulo)))
 
+    #addition itself
     result.x = (s * s - point.x - point.x) % curve.modulo
     result.y = (s * (2 * point.x + result.x) - s * s) % curve.modulo
 

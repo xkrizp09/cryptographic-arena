@@ -10,4 +10,5 @@ Selected topics from cryptography:
 * Transposition cipher
 * Steganography
 ## Dependencies
+There are no dependencies
 ## Setup
