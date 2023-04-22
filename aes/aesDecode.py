@@ -12,7 +12,7 @@ with open("output2.txt") as h:
 
 #create blob bytearray for XOR operation between these two bytearrays
 
-test = b"No right of private conversation was enumerated in the Constitution. I don't suppose it occurred to anyone at the time that it could be prevented."
+#Define a variable that contains a bytes object for testing.
 
 #Create a bytearray as the result of an XOR operation between the blob and the first len(xxx) bytes of the test string.
 
