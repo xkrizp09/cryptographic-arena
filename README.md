@@ -14,3 +14,11 @@ Selected topics from cryptography:
 * Crypto library
 ## Setup
 pip install pycrypto, for Crypto library
+##How to run in console
+Steganography: python extract.py stegano_encoded_X.png,
+ElGamal: python decode.py,\\
+AES: python3 aesDecode.py,\\
+Hash: python3 Hash.py,\\
+RSA: python3 lenstra.py,\\
+CBC-MAC: python3 default.py,\\
+Transposition cipher: python3 transpose.py.\\
