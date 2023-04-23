@@ -1,7 +1,6 @@
 import cv2
 import sys
-import helperFunctions
-
+from helperFunctions import messageToBinary, splitBinaryData  
      
 def extractData(image):
     # Load the image
@@ -9,12 +8,11 @@ def extractData(image):
     
     binary_data = ""
     decoded_data = ""
-    all_bytes = []
     
     # Convert pixel values to binary format
     for row in image:
         for pixel in row:
-            #convert the red, green and blue values into binary format
+            #convert the red, green and blue values into binary format, check helperFunctions
             
             #extracting data from the least significant bit of red pixel
             
@@ -23,7 +21,7 @@ def extractData(image):
             #extracting data from the least significant bit of red pixel
           
     # split by 8-bits
-    all_bytes = helperFunctions.splitBinaryData(binary_data)
+    all_bytes = splitBinaryData(binary_data)
   
     for byte in all_bytes:
         # convert from bits to characters from all_bytes
@@ -38,9 +36,9 @@ def extractData(image):
 def main():
     if len(sys.argv) == 2:
         image = sys.argv[1]
-        print("Tajná zprava je: " + extractData(image)) 
+        print(extractData(image)) 
     else:
-        print("Chyba: Musíte zadat jeden parametr.")
+        print("Error: you have to run it with the parameter.")
 
 if __name__ == "__main__":
     main()

@@ -38,7 +38,6 @@ class EllipticCurve:
         self.b = b
         self.modulo = modulo
 
-
 def LenstraEllipticCurveFactorization(modulus):
     if modulus % 2 == 0:
         return 2
@@ -83,7 +82,6 @@ def LenstraEllipticCurveFactorization(modulus):
 
     return -1
 
-
 #executes the Factorization and prints out the found divisors and returns a list with the found divisors
 def LECF(modulus):
     results = []
@@ -96,13 +94,6 @@ def LECF(modulus):
 
         modulus/= results[-1]
         print(results[-1])
-
-
-
-
-
-
-
 
 #this will print the factors, input is the number to be factored
 LECF()  

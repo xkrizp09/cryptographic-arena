@@ -9,7 +9,7 @@ def messageToBinary(message):  # define a function called "messageToBinary" that
     elif type(message) == int or type(message) == np.uint8:  # check if "message" is an integer or numpy uint8 object
         return format(message, "08b") # format the integer directly as an 8-bit binary string and return it
     else:  # if "message" is not one of the supported types, raise a TypeError with a custom error message
-      raise TypeError("Vstup neni podporovan")
+      raise TypeError("Input is not supported")
 
 # Split a binary string into 8-bit chunks
 def splitBinaryData(binary_data):
