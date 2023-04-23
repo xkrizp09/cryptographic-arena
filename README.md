@@ -14,7 +14,7 @@ Selected topics from cryptography:
 * Crypto library
 * PWN tools
 ## Setup
-pip install pycrypto, for Crypto library
+pip install pycrypto, for Crypto library, pip install pwntools
 ## How to run in console
 Steganography: python extract.py stegano_encoded_X.png,<br />
 ElGamal: python decode.py,<br />
