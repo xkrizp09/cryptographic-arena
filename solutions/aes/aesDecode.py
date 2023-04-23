@@ -8,15 +8,15 @@ from pwn import xor
 with open("output2.txt") as h:
 #Complete the remaining code here.
 
-#store the content into two bytearrays
+#store the content into two binasciiarrays
 
-#create blob bytearray for XOR operation between these two bytearrays
+#create an object blob for XOR operation between these two binasciiarrays
 
 #Define a variable that contains a bytes object for testing.
 
-#Create a bytearray as the result of an XOR operation between the blob and the first len(xxx) bytes of the test string.
+#Create an object as the result of an XOR operation between the blob and the first len(xxx) bytes of the test string.
 
 #The flag listing.
 
 FLAG = flag.decode('utf-8')[5:-1]
-print(f"FLAG=({FLAG})")
+print(f"FLAG({FLAG})")
