@@ -12,8 +12,6 @@ cbc.MAC_generation(text) - used to cipher block of the message
 cbc.MAC_authentication(tag) - used for checking if generated tag is correct
 	
 """
-
-
 def exploit():
 	#Text we want to create MAC from
 	plaintext = "CBC-MAC is really interesting!!!"
