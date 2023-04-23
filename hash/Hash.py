@@ -20,9 +20,6 @@ def findCollision(hashes, passhash):
     return index
         
 
-
-
-
 passwords = readPasswords() #implement
 hashes = getHashes(passwords)
 
