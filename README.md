@@ -10,7 +10,7 @@ Selected topics from cryptography:
 * Transposition cipher,
 * Steganography.
 ## Dependencies
-Python 3
-Crypto library
+* Python 3
+* Crypto library
 ## Setup
 pip install pycrypto, for Crypto library
