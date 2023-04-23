@@ -12,6 +12,7 @@ Selected topics from cryptography:
 ## Dependencies
 * Python 3
 * Crypto library
+* PWN tools
 ## Setup
 pip install pycrypto, for Crypto library
 ## How to run in console
