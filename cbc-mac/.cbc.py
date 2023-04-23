@@ -11,26 +11,26 @@ BLOCKSIZE = 16
 
 def MAC_generation(plaintext):
 	try:
-		#Zkontroluje delku velikost vstupu, aby odpovidala nasobkum 16 (velikosti bloku)
+		#Checks if the input is a multiple of 16
 		assert len(plaintext) % 16 == 0
 		
-		#Zabrani uzivateli pouzit cely text
+		#Forbids user from using whole text
 		if plaintext == "CBC-MAC is really interesting!!!":
-			print("Takto jednoduche to nebude, zkus to jinak")
+			print("It's not that easy, try again")
 			exit()
 		
-		#Vytvoreni MAC tagu
+		#Creating a ciphertext
 		obj1 = AES.new(AES_key, AES.MODE_CBC, iv)
 		ciphertext = obj1.encrypt(plaintext)
 		ciphertext = ciphertext[len(ciphertext) - 16:]
 
 		return ciphertext.hex()
 	except:
-		print ("Chyba vstupu")
+		print ("Input error")
 
 def MAC_authentication(tag):
-	#Pokud uzivatel uspesne zvolil postup reseni, ziska flag
+	#if user chose the correct approach tag will be displayed
 	if tag == MAC_flag:
 		print ("FLAG{cbc_m4c}")
 	else:
-		print ("To neni ono, zkus to znovu")
+		print ("That's not it, try again")
