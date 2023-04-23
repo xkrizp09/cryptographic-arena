@@ -15,4 +15,4 @@ test = b"No right of private conversation was enumerated in the Constitution. I 
 #Creates an object named "flag" as the result of an XOR operation between the blob and the first len(encrypted_flag) bytes of the test string.
 flag = xor(blob, test[: len(encrypted_flag)]) [: len(encrypted_flag)]
 FLAG = flag.decode('utf-8')[5:-1]
-print(f"FLAG=({FLAG})")
+print(f"FLAG({FLAG})")
